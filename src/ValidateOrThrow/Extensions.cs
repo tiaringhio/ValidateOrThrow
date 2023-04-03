@@ -12,7 +12,7 @@ namespace ValidateOrThrow
         /// <exception cref="InvalidOperationException">The section was not found.</exception>
         /// <exception cref="OptionsValidationException">One or more validations failed.</exception>
         /// </summary>
-        /// <param name="services">Extension of IServiceCollection</param>
+        /// <param name="services">Extension of IServiceCollection.</param>
         /// <typeparam name="TOptions">Type of Option that will be added</typeparam>
         public static IServiceCollection AddOptionsOrThrow<TOptions>(
             this IServiceCollection services)

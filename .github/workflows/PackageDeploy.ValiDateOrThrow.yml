@@ -2,7 +2,7 @@ name: ValidateOrThrow.Nuget
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - src/ValidateOrThrow/ValidateOrThrow.csproj
 jobs:

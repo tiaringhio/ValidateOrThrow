@@ -15,7 +15,7 @@ jobs:
   publish:
     name: build, pack & publish
     runs-on: ubuntu-latest
-    environment: OpenAi.Nuget
+    environment: ValidateOrThrow.Nuget
     
     steps:
       - name: Publish package

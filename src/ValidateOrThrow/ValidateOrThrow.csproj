@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <Authors>tiaringhio</Authors>
+        <Description>Simple method to implement the options pattern with 1 line of code.</Description>
+        <TargetFrameworks>net6.0;net7.0;netstandard2.1</TargetFrameworks>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>tiaringhio.ValidateOrThrow</Title>
+        <PackageId>tiaringhio.ValidateOrThrow</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="7.0.0" />
+    </ItemGroup>
+
+</Project>

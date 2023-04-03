@@ -1,0 +1,20 @@
+name: ValidateOrThrow.Nuget
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - src/ValidateOrThrow/ValidateOrThrow.csproj
+jobs:
+  publish:
+    name: build, pack & publish
+    runs-on: ubuntu-latest
+    environment: OpenAi.Nuget
+    
+    steps:
+      - name: Publish package
+        uses: KeyserDSoze/DefaultAction/pushing_nuget_with_symbols@v1.0.1
+        with:
+          dotnet-version: ${{ secrets.NET_VERSION }}
+          path: src/ValidateOrThrow/ValidateOrThrow.csproj
+          api-key: ${{ secrets.NUGET_API_KEY }}

@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - src/ValidateOrThrow/ValidateOrThrow.csproj
+      - .github/workflows/**
 
 permissions:
   contents: read

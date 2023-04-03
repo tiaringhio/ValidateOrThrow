@@ -8,6 +8,11 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>tiaringhio.ValidateOrThrow</Title>
         <PackageId>tiaringhio.ValidateOrThrow</PackageId>
+        <Copyright>Mattia Ricci</Copyright>
+        <PackageProjectUrl>https://github.com/tiaringhio/ValidateOrThrow</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageIcon>logo.png</PackageIcon>
+        <RepositoryUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,6 +22,18 @@
       <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
       <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
       <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="logo.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+      <None Include="..\..\img\logo.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+        <Link>logo.png</Link>
+      </None>
     </ItemGroup>
 
 </Project>

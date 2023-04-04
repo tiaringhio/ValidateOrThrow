@@ -27,8 +27,6 @@ namespace ValidateOrThrow
                         .Exists())
                 .ValidateDataAnnotations()
                 .ValidateOnStart();
-
-            services.AddSingleton(sp => sp.GetRequiredService<IOptions<TOptions>>());
             
             return services;
         }

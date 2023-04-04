@@ -13,6 +13,7 @@
         <PackageLicenseUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</PackageLicenseUrl>
         <PackageIcon>logo.png</PackageIcon>
         <RepositoryUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</RepositoryUrl>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>

@@ -7,6 +7,19 @@
   <p align="center">
     Implement the Options Pattern with a single line of code, including validation on start and via Data Annotations.
   </p>
+  
+# Install
+
+Install package tiaringhio.ValidateOrThrow [from Nuget](https://www.nuget.org/packages/tiaringhio.ValidateOrThrow/).  
+Here's how via command line:
+
+```powershell
+Install-Package tiaringhio.ValidateOrThrow
+```
+  
+# Requirements
+
+This package targets .NET standard 2.1 and above.
 
 # How To
 

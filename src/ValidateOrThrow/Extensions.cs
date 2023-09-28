@@ -16,9 +16,15 @@ namespace ValidateOrThrow
         /// <typeparam name="TOptions">Type of Option that will be added</typeparam>
         public static IServiceCollection AddOptionsOrThrow<TOptions>(
             this IServiceCollection services)
-            where TOptions : class, IValidatedOption, new()
+            where TOptions : class, IValidatedOption
         {
-            var options = new TOptions();
+            var options = Activator.CreateInstance<TOptions>();
+            
+            if (options == null)
+            {
+                throw new InvalidOperationException($"Failed to create an instance of {nameof(TOptions)}");
+            }
+            
             services.AddOptions<TOptions>()
                 .BindConfiguration(options.SectionName)
                 .Validate<IConfiguration>((_, configuration)

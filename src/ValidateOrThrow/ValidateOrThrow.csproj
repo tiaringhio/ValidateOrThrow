@@ -3,6 +3,7 @@
     <PropertyGroup>
         <Nullable>enable</Nullable>
         <Authors>tiaringhio</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <Description>Simple method to implement the options pattern with 1 line of code.</Description>
         <TargetFrameworks>net8.0;net9.0;netstandard2.1</TargetFrameworks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -10,10 +11,10 @@
         <PackageId>tiaringhio.ValidateOrThrow</PackageId>
         <Copyright>Mattia Ricci</Copyright>
         <PackageProjectUrl>https://github.com/tiaringhio/ValidateOrThrow</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageLicense>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</PackageLicense>
         <PackageIcon>logo.png</PackageIcon>
         <RepositoryUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</RepositoryUrl>
-        <Version>1.0.3</Version>
+        <Version>1.0.4</Version>
     </PropertyGroup>
 
     <ItemGroup>
@@ -35,6 +36,7 @@
         <PackagePath></PackagePath>
         <Link>logo.png</Link>
       </None>
+      <None Include="..\..\README.md" Pack="True" PackagePath=""></None>
     </ItemGroup>
 
 </Project>

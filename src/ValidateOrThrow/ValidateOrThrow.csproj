@@ -11,10 +11,10 @@
         <PackageId>tiaringhio.ValidateOrThrow</PackageId>
         <Copyright>Mattia Ricci</Copyright>
         <PackageProjectUrl>https://github.com/tiaringhio/ValidateOrThrow</PackageProjectUrl>
-        <PackageLicense>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</PackageLicense>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>logo.png</PackageIcon>
         <RepositoryUrl>https://github.com/tiaringhio/ValidateOrThrow/blob/main/LICENSE</RepositoryUrl>
-        <Version>1.0.4</Version>
+        <Version>1.0.5</Version>
     </PropertyGroup>
 
     <ItemGroup>
@@ -37,6 +37,7 @@
         <Link>logo.png</Link>
       </None>
       <None Include="..\..\README.md" Pack="True" PackagePath=""></None>
+      <None Include="..\..\LICENSE" Pack="True" PackagePath="" />
     </ItemGroup>
 
 </Project>

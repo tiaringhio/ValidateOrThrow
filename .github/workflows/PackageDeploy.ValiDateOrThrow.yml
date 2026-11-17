@@ -1,5 +1,6 @@
 name: ValidateOrThrow.Nuget
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
